@@ -1,15 +1,15 @@
-- DOMAIN-SUFFIX,berlintwitterwall.com
-- DOMAIN-SUFFIX,simbolostwitter.com
-- DOMAIN-SUFFIX,turbotwitter.com
-- DOMAIN-SUFFIX,twitter4j.org
-- DOMAIN-SUFFIX,twittercounter.com
-- DOMAIN-SUFFIX,twitterfeed.com
-- DOMAIN-SUFFIX,twittergadget.com
-- DOMAIN-SUFFIX,twitterkr.com
-- DOMAIN-SUFFIX,twittermail.com
-- DOMAIN-SUFFIX,twitterrific.com
-- DOMAIN-SUFFIX,twittertim.es
-- DOMAIN-KEYWORD,twitter
-- DOMAIN-SUFFIX,twitter.com
-- DOMAIN-SUFFIX,twitter.jp
-- DOMAIN-SUFFIX,ads-twitter.com
+DOMAIN-SUFFIX,berlintwitterwall.com
+DOMAIN-SUFFIX,simbolostwitter.com
+DOMAIN-SUFFIX,turbotwitter.com
+DOMAIN-SUFFIX,twitter4j.org
+DOMAIN-SUFFIX,twittercounter.com
+DOMAIN-SUFFIX,twitterfeed.com
+DOMAIN-SUFFIX,twittergadget.com
+DOMAIN-SUFFIX,twitterkr.com
+DOMAIN-SUFFIX,twittermail.com
+DOMAIN-SUFFIX,twitterrific.com
+DOMAIN-SUFFIX,twittertim.es
+DOMAIN-KEYWORD,twitter
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,twitter.jp
+DOMAIN-SUFFIX,ads-twitter.com
