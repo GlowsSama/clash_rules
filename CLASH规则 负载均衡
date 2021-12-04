@@ -1,30 +1,30 @@
-CLASH规则  负载均衡
+负载均衡
 
 
 
 
 ;设置分组标志位
-custom_proxy_group=PROXIES`select`[]DIRECT`[]IEPL`[]HK`[]TW`[]SG`[]JP`[]KR`[]US`[]Other
-custom_proxy_group=GAME`select`[]DIRECT`[]PROXIES`[]IEPL`[]Other
+custom_proxy_group=PROXIES`select`[]DIRECT`[]IEPL/AIA`[]HK`[]TW`[]SG`[]JP`[]KR`[]US`[]Other
+custom_proxy_group=GAME`select`[]DIRECT`[]PROXIES`[]IEPL/AIA`[]Other
 custom_proxy_group=Apple`select`[]DIRECT`[]PROXIES
 custom_proxy_group=MicroSoft`select`[]DIRECT`[]PROXIES
 custom_proxy_group=Bilibili`select`[]DIRECT`[]HK`[]TW
-custom_proxy_group=Telegram`select`[]PROXIES`[]HK`[]TW`[]SG`[]JP`[]KR`[]US`[]Other
-custom_proxy_group=YouTube`select`[]PROXIES`[]HK`[]TW`[]SG`[]JP`[]KR`[]US`[]Other
-custom_proxy_group=Netflix`select`[]PROXIES`[]HK`[]TW`[]SG`[]JP`[]KR`[]US`[]Other
-custom_proxy_group=Disney+`select`[]PROXIES`[]HK`[]TW`[]SG`[]JP`[]KR`[]US`[]Other
-custom_proxy_group=HBO`select`[]PROXIES`[]HK`[]TW`[]SG`[]JP`[]KR`[]US`[]Other
-custom_proxy_group=Spotify`select`[]PROXIES`[]HK`[]TW`[]SG`[]JP`[]KR`[]US`[]Other
+custom_proxy_group=Telegram`select`[]PROXIES`[]IEPL/AIA`[]HK`[]TW`[]SG`[]JP`[]KR`[]US`[]Other
+custom_proxy_group=YouTube`select`[]PROXIES`[]IEPL/AIA`[]HK`[]TW`[]SG`[]JP`[]KR`[]US`[]Other
+custom_proxy_group=Netflix`select`[]PROXIES`[]IEPL/AIA`[]HK`[]TW`[]SG`[]JP`[]KR`[]US`[]Other
+custom_proxy_group=Disney+`select`[]PROXIES`[]IEPL/AIA`[]HK`[]TW`[]SG`[]JP`[]KR`[]US`[]Other
+custom_proxy_group=HBO`select`[]PROXIES`[]IEPL/AIA`[]HK`[]TW`[]SG`[]JP`[]KR`[]US`[]Other
+custom_proxy_group=Spotify`select`[]PROXIES`[]IEPL/AIA`[]HK`[]TW`[]SG`[]JP`[]KR`[]US`[]Other
 custom_proxy_group=AdBlock`select`[]DIRECT`[]REJECT
 #custom_proxy_group=Select`select`.*`
-custom_proxy_group=IEPL`select`V3`http://www.gstatic.com/generate_204`100
-custom_proxy_group=HK`load-balance`V2-香港`http://www.gstatic.com/generate_204`100
-custom_proxy_group=TW`load-balance`V2-台湾`http://www.gstatic.com/generate_204`100
-custom_proxy_group=SG`load-balance`V2-新加坡`http://www.gstatic.com/generate_204`100
-custom_proxy_group=JP`load-balance`V2-日本`http://www.gstatic.com/generate_204`100
-custom_proxy_group=KR`load-balance`V1-韩国`http://www.gstatic.com/generate_204`100
-custom_proxy_group=US`load-balance`V2-美国`http://www.gstatic.com/generate_204`100
-custom_proxy_group=Other`select`印度|泰国|马来西亚|欧洲|欧盟|德国|法国|意大利|俄罗斯|土耳其|波兰|荷兰|加拿大|巴西|阿根廷|澳大利亚`http://www.gstatic.com/generate_204`100
+custom_proxy_group=IEPL/AIA`select`IEPL|AIA`http://www.gstatic.com/generate_204`3600	
+custom_proxy_group=HK`load-balance`V2-香港`http://www.gstatic.com/generate_204`600	
+custom_proxy_group=TW`load-balance`V2-台湾`http://www.gstatic.com/generate_204`600		
+custom_proxy_group=SG`load-balance`V2-新加坡`http://www.gstatic.com/generate_204`600		
+custom_proxy_group=JP`load-balance`V1-日本`http://www.gstatic.com/generate_204`600		
+custom_proxy_group=KR`load-balance`V1-韩国`http://www.gstatic.com/generate_204`600		
+custom_proxy_group=US`load-balance`V2-美国`http://www.gstatic.com/generate_204`600		
+custom_proxy_group=Other`select`印度|泰国|马来西亚|欧洲|欧盟|德国|法国|意大利|俄罗斯|土耳其|波兰|荷兰|加拿大|巴西|阿根廷|澳大利亚`http://www.gstatic.com/generate_204`600		
 
 
 
@@ -32,6 +32,7 @@ custom_proxy_group=Other`select`印度|泰国|马来西亚|欧洲|欧盟|德国|
 
 ;设置规则标志位
 surge_ruleset=TW,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bahamut.list
+surge_ruleset=JP,https://raw.githubusercontent.com/qw1363673600/clash_rules/main/Twitter.list	
 surge_ruleset=US,https://raw.githubusercontent.com/LM-Firefly/Rules/master/Global-Services/Hulu.list
 surge_ruleset=Bilibili,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
 surge_ruleset=Bilibili,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
@@ -42,8 +43,9 @@ surge_ruleset=AdBlock,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/C
 surge_ruleset=AdBlock,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list
 surge_ruleset=REJECT,rules/DivineEngine/Surge/Ruleset/Guard/Hijacking.list
 surge_ruleset=GAME,https://raw.githubusercontent.com/LM-Firefly/Rules/master/Game.list
-surge_ruleset=Apple,rules/DivineEngine/Surge/Ruleset/Extra/Apple/Apple.list
-surge_ruleset=MicroSoft,https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RuleSet/microsoft.list
+surge_ruleset=Apple,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list	
+surge_ruleset=MicroSoft,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/microsoft.list	
+surge_ruleset=MicroSoft,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list	
 surge_ruleset=Netflix,https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RuleSet/Media/netflix.list
 surge_ruleset=YouTube,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
 surge_ruleset=HBO,https://raw.githubusercontent.com/LM-Firefly/Rules/master/Global-Services/HBO.list
@@ -55,8 +57,11 @@ surge_ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Cl
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+surge_ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list	
 surge_ruleset=DIRECT,[]GEOIP,CN
 surge_ruleset=PROXIES,https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RuleSet/ForceProxy.list
+surge_ruleset=PROXIES,https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RuleSet/ProxyLite.list	
+surge_ruleset=PROXIES,https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RuleSet/ProxyGFWlist.list	
 surge_ruleset=PROXIES,rules/DivineEngine/Surge/Ruleset/StreamingMedia/Streaming.list
 surge_ruleset=PROXIES,rules/DivineEngine/Surge/Ruleset/Global.list
 surge_ruleset=PROXIES,[]MATCH
