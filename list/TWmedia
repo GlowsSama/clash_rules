@@ -13,11 +13,3 @@ DOMAIN-SUFFIX,litv.tv
 #TaiWanGood
 DOMAIN,hamifans.emome.net
 DOMAIN-SUFFIX,skyking.com.tw
-# WETV
-DOMAIN-SUFFIX,wetv.vip
-DOMAIN-SUFFIX,wetvinfo.com
-DOMAIN-SUFFIX,meovse.com
-DOMAIN,wetv.acc.qq.com
-DOMAIN,oth.eve.mdt.qq.com
-DOMAIN,oth.str.mdt.qq.com
-IP-CIDR,203.205.136.0/23
