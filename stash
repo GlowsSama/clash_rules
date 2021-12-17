@@ -6,7 +6,6 @@
 ;设置分组标志位
 custom_proxy_group=PROXIES`select`[]DIRECT`[]HK`[]TW`[]SG`[]US`[]IEPL/AIA
 custom_proxy_group=Media`select`[]PROXIES`[]HK`[]TW`[]SG`[]US`[]IEPL/AIA
-custom_proxy_group=Apple`select`[]DIRECT`[]PROXIES
 custom_proxy_group=Bilibili`select`[]DIRECT`[]HK`[]TW
 custom_proxy_group=IEPL/AIA`select`IEPL|AIA`http://www.gstatic.com/generate_204`3600	
 custom_proxy_group=HK`load-balance`V2-香港`http://www.gstatic.com/generate_204`600	
@@ -27,7 +26,6 @@ surge_ruleset=US,https://raw.githubusercontent.com/LM-Firefly/Rules/master/Globa
 surge_ruleset=Bilibili,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
 surge_ruleset=Bilibili,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
 surge_ruleset=REJECT,rules/DivineEngine/Surge/Ruleset/Guard/Hijacking.list
-surge_ruleset=Apple,https://raw.githubusercontent.com/Meilieage/webcdn/main/rule/list/AppleAll.list
 surge_ruleset=Media,https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RuleSet/Media/netflix.list
 surge_ruleset=Media,https://raw.githubusercontent.com/LM-Firefly/Rules/master/Global-Services/HBO.list
 surge_ruleset=Media,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/HBO.list
